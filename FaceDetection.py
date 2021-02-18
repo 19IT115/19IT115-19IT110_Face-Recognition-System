@@ -14,11 +14,10 @@ while True:
         frame = cv2.rectangle(frame,(x,y),(x+w,y+h),(255,0,0),2)
 
 
-    # Display the resulting frame
     cv2.imshow('frame',frame)
     if cv2.waitKey(1) & 0xFF == ord('q'):
         break
 
-# When everything is done we will release the capture
+# It will release the capture
 captureface.release()
 cv2.destroyAllWindows()
