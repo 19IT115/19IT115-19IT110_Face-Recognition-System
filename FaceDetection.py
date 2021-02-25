@@ -4,7 +4,7 @@ cascade_classifier = cv2.CascadeClassifier('haarcascades/haarcascade_frontalface
 captureface = cv2.VideoCapture(0)
 
 while True:
-    # It will Capture frame-by-frame
+    # It will Capture frame by frame
     ret, frame = captureface.read()
 
     gray = cv2.cvtColor(frame, 0)
